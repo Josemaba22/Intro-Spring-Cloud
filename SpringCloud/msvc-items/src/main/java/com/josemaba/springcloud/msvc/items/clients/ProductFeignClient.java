@@ -1,6 +1,7 @@
 package com.josemaba.springcloud.msvc.items.clients;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +17,6 @@ public interface ProductFeignClient {
     List<Product> findAll();
 
     @GetMapping("/{id}")
-    public ResponseEntity<Product> getById(@PathVariable Long id);
-    
+    public Product getById(@PathVariable Long id);
+
 }
