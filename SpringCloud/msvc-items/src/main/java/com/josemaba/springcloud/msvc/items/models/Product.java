@@ -1,6 +1,5 @@
 package com.josemaba.springcloud.msvc.items.models;
 
-import java.beans.Transient;
 import java.time.LocalDate;
 
 public class Product {

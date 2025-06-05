@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.josemaba.springcloud.msvc.items.models.Product;
 
-@FeignClient(name = "mscv-product")
+@FeignClient(name = "mscv-products")
 public interface ProductFeignClient {
 
     @GetMapping
