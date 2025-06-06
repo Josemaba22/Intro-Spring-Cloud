@@ -1,4 +1,4 @@
-package com.josemaba.springcloud.msvc.items.clients;
+package com.josemaba.springcloud.msvc.items;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
