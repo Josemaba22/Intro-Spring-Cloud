@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EurekaServerApplication",
+            "request": "launch",
+            "mainClass": "com.josemaba.springcloud.eurekaserver.app.eureka_server.EurekaServerApplication"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -32,6 +38,16 @@
             "mainClass": "com.josemaba.springcloud.msvc.products.MsvcProductsApplication",
             "projectName": "msvc-products",
             "vmArgs": "-Dserver.port=9001"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EurekaServerApplication<eureka-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.josemaba.springcloud.eurekaserver.app.eureka_server.EurekaServerApplication",
+            "projectName": "eureka-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
