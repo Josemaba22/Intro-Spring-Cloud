@@ -19,7 +19,8 @@
             "mainClass": "com.josemaba.springcloud.eurekaserver.app.eureka_server.EurekaServerApplication",
             "projectName": "eureka-server",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=65275 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=eureka-server"
         },
         {
             "type": "java",
@@ -28,6 +29,17 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.josemaba.springcloud.msvc.items.MsvcItemsApplication",
             "projectName": "msvc-items",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=49183 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=msvc-items"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsvcGatewayServerApplication<msvc-gateway-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.josemaba.springcloud.app.gateway.msvc_gateway_server.MsvcGatewayServerApplication",
+            "projectName": "msvc-gateway-server",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
