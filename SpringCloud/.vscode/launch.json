@@ -42,6 +42,16 @@
             "projectName": "msvc-gateway-server",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsvcGatewayServerApplication<msvc-gateway-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.josemaba.springcloud.app.gateway.MsvcGatewayServerApplication",
+            "projectName": "msvc-gateway-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
     // Use IntelliSense to learn about possible attributes.
